@@ -1,0 +1,64 @@
+.navbar{
+  margin-top: 25px;
+}
+h1 {
+  color: #fff;
+  font-size: 4em;
+  color: aqua;
+  font-family: "nunito", Sans-Serif;
+  position: relative;
+  width: max-content;
+}
+h1::after,
+h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+h1::before {
+  /* background: #fcdf03; */
+  background: black;
+  animation: typewriter 5s steps(22) infinite;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: blink 700ms linear infinite, typewriter 5s steps(22) infinite;
+}
+.uff{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+@keyframes typewriter {
+  0% {
+    left: 0;
+  }
+
+  40% {
+    left: 100%;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  74% {
+    left: 0;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: rgb(1, 1, 30);
+  }
+}
